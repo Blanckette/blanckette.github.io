@@ -385,8 +385,6 @@ header {
         justify-content: flex-end;
         align-items: center;
         align-self: flex-end;
-        width: 353px;
-        height: 234px;
         flex-shrink: 0;
         /* padding-bottom: 2rem; */
 
@@ -551,8 +549,7 @@ header {
 
 h2 {
     text-transform: uppercase;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem;
     font-weight: 100;
     letter-spacing: 0.2rem;
 }
@@ -752,7 +749,7 @@ h2 {
 }
 
 #talentAndSkills {
-    padding: 0 2.5rem;
+    padding: 0 0.5rem;
     position: relative;
     top: 1rem;
 
@@ -826,7 +823,7 @@ h2 {
 }
 
 #educationSpecialisation {
-    padding: 0 2.5rem;
+    padding: 0 0.5rem;
     position: relative;
     top: 2.5rem;
 
@@ -885,7 +882,7 @@ h2 {
 }
 
 #workBackground {
-    padding: 0 2.5rem;
+    padding: 0 0.5rem;
     position: relative;
 
     & .illustration-wrapper {
@@ -955,7 +952,7 @@ h2 {
 }
 
 #languages {
-    padding: 0 2.5rem;
+    padding: 0 0.5rem;
     position: relative;
 
     & .illustration-wrapper {
@@ -1003,7 +1000,7 @@ h2 {
 }
 
 #interests {
-    padding: 0 2.5rem;
+    padding: 0 0.5rem;
     position: relative;
 
     & .illustration-wrapper {
