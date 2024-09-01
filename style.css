@@ -35,12 +35,20 @@ body {
     padding: 1rem;
     display: flex;
     justify-content: space-around; 
+    align-content: center;
     align-items: flex-end;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 
     & .my-name {
         text-transform: uppercase;
+    }
+
+    & .photoId-wrapper {
+
+        & .photoId {
+            width: 4rem;
+        }
     }
 
     & .menu-links {
@@ -241,6 +249,12 @@ header {
         }
     }
 
+    .green-button:hover {
+        background-color: var(--orange-color);
+        transform: scale(1.1);
+        transition: 0.8s ease;
+    }
+
     @media (width <= 997px) {
         #menu {
             margin-top: 2rem;
@@ -290,6 +304,7 @@ header {
 
         & .social {
             text-decoration: none;
+            text-transform: capitalize;
             color: black;
             display: inline-block;
             position: relative;
@@ -448,8 +463,7 @@ header {
         }
 
         & .project-link {
-            text-decoration: none;
-            color: black;
+            text-decoration: underline; 
             display: inline-block;
             position: relative;
             background-color: var(--green-color);
@@ -459,6 +473,12 @@ header {
             color: var(--white-for-text);
             top: 3rem;
             text-align: center;
+        }
+
+        & .project-link:hover {
+            background-color: var(--orange-color);
+            transform: scale(1.1);
+            transition: 0.8s ease;
         }
 
         & .project-photo {
@@ -706,6 +726,10 @@ h2 {
 
 .tech-illustration {
     padding: 1.5rem;
+    
+    & .tech-illustration-image {
+        width: 12rem;
+    }
 }
 
 #talentAndSkills {
