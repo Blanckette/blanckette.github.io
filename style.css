@@ -422,6 +422,8 @@ header {
     border-color: black;
     padding-right: 2.5rem;
     padding-left: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .projetcs-carousel {
@@ -459,8 +461,6 @@ header {
         width: 100%;
         flex: 0 0 auto;
         position: relative;
-        scroll-snap-type: mandatory;
-        scroll-snap-stop: always;
 
         & .project-text {
             background-color: var(--white-bg-color);
@@ -508,7 +508,7 @@ header {
             color: var(--white-for-text);
             padding: 0.8rem;
             border-radius: 50px;
-            font-size: small;
+            font-size: xx-small;
             text-transform: uppercase;
             box-shadow: 8px 8px 21px -15px rgba(66, 68, 90, 1);
         }
@@ -552,6 +552,7 @@ h2 {
     padding: 1.5rem;
     font-weight: 100;
     letter-spacing: 0.2rem;
+    font-size: large;
 }
 
 .projets-portfolio {
@@ -771,6 +772,7 @@ h2 {
         
         & p > button {
             text-transform: uppercase;
+            font-size: small;
         }
     }
 
@@ -845,6 +847,7 @@ h2 {
         
         & p > button {
             text-transform: uppercase;
+            font-size: small;
         }
     }
 
@@ -904,6 +907,7 @@ h2 {
         
         & p > button {
             text-transform: uppercase;
+            font-size: small;
         }
     }
 
@@ -974,6 +978,7 @@ h2 {
         
         & p > button {
             text-transform: uppercase;
+            font-size: small;
         }
     }
 
@@ -1022,10 +1027,12 @@ h2 {
         
         & p > button {
             text-transform: uppercase;
+            font-size: small;
         }
 
         & .uppercase {
             text-transform: uppercase;
+            font-size: small;
         }
     }
 
