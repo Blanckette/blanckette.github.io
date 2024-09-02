@@ -11,6 +11,7 @@
     <title>Blanka Adamus - font-end developer</title>
 </head>
 <body>
+    <div class="main-body-wrapper">
     <header>
         <div>
             <nav id="menu" class="social-links navbar">
@@ -21,9 +22,17 @@
             </nav>
         </div>
         <div class="top-menu">
-            <p class="my-name">Blanka Adamus</p>
+            <div>
+                <p class="my-name">Blanka Adamus</p>
+            </div>
             <div class="photoId-wrapper">
                 <img class="photoId" src="ressources/photoId-round.png" alt="">
+            </div>
+            <div class="nav-large">
+                <a class="social" href="about.html" target="_blank">my cv</a>
+                <a class="social menu-item nav-link" href="#item-3">contact</a>
+                <a class="social" href="https://github.com/Blanckette" target="_blank">Github</a>
+                <a class="social" href="https://www.linkedin.com/in/blanka-adamus-200276b8/?locale=en_US" target="_blank">LinkedIn</a>
             </div>
         </div>
         <!-- <div class="hero-wrapper">
@@ -35,11 +44,15 @@
         <div class="porfolio-presentation">
             <div class="illustration-wrapper">
                 <img class="portfolio-illusration" src="ressources/Portfolio-illustrationSmall.png" alt="">
+                <img class="portfolio-illusration-xl" src="ressources/portfolio-illustration-xl.png" alt="">
             </div>
-            <p class="portfolio-text">This website displays my <strong>front-end developer</strong> portfolio and highlights the technologies I employ.</p>
-            <div class="button-wrapper">
-                <button class="green-button" type="button"><a class="white-text" href="about.html">My cv</a></button>
-                <button class="green-button" type="button"><a class="white-text menu-item nav-link" href="#item-3" >Contact</a></button>
+            <div class="portfolio-xl">
+                <h3 class="portfolio-xl-title">Portfolio</h3>
+                <p class="portfolio-text">This website displays my <strong>front-end developer</strong> portfolio and highlights the technologies I employ.</p>
+                <div class="button-wrapper">
+                    <button class="green-button" type="button"><a class="white-text" href="about.html">My cv</a></button>
+                    <button class="green-button" type="button"><a class="white-text menu-item nav-link" href="#item-3" >Contact</a></button>
+                </div>
             </div>
             <!-- <button class="green-button" type="button"><a class="white-text" href="about.html">My cv</a></button>
             <button class="green-button" type="button"><a class="white-text" href="">Contact</a></button> -->
@@ -121,22 +134,24 @@
         <a class="bullet list-group-item list-group-item-action" href="#list-item-4"></a>
         <a class="bullet list-group-item list-group-item-action" href="#list-item-5"></a>
     </div>
-    <section class="technologies">
-        <div class="tech-illustration">
-            <img class="tech-illustration-image" src="ressources/tech-illustration.png" alt="">
-        </div>
-        <div class="technologies-wrapper">
-            <h3 class="tech-title">technologies i use</h3>
-            <div class="tech-icons">
-                <img class="logo" src="ressources/html.png" alt="">
-                <img class="logo" src="ressources/css-3.png" alt="">
-                <img class="logo" src="ressources/ljavascript.png" alt="">
-                <img class="logo" src="ressources/devicon_bootstrap.png" alt="">
-                <img class="logo" src="ressources/skill-icons_tailwindcss-dark.png" alt="">
-                <img class="logo" src="ressources/devicon_git.png" alt="">
-                <img class="logo" src="ressources/skill-icons_wordpress.png" alt="">
-                <img class="logo" src="ressources/logos_shopify.png" alt="">
-                <img class="logo" src="ressources/logos_figma.png" alt="">
+    <section class="technologies-section">
+        <div class="technologies">
+            <div class="tech-illustration">
+                <img class="tech-illustration-image" src="ressources/tech-illustration.png" alt="">
+            </div>
+            <div class="technologies-wrapper">
+                <h3 class="tech-title">technologies i use</h3>
+                <div class="tech-icons">
+                    <img class="logo" src="ressources/html.png" alt="">
+                    <img class="logo" src="ressources/css-3.png" alt="">
+                    <img class="logo" src="ressources/ljavascript.png" alt="">
+                    <img class="logo" src="ressources/devicon_bootstrap.png" alt="">
+                    <img class="logo" src="ressources/skill-icons_tailwindcss-dark.png" alt="">
+                    <img class="logo" src="ressources/devicon_git.png" alt="">
+                    <img class="logo" src="ressources/skill-icons_wordpress.png" alt="">
+                    <img class="logo" src="ressources/logos_shopify.png" alt="">
+                    <img class="logo" src="ressources/logos_figma.png" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -340,6 +355,7 @@
         <!-- </ul>
         <div class="separation-line"></div>
     </section> -->
+    </div>
     <footer id="item-3">
         <div class="footer-content">
             <h2>Contact</h2>
