@@ -112,6 +112,7 @@ body {
         text-transform: uppercase;
         background-color: transparent;
         font-weight: lighter;
+        color: #000;
     }
 
     & .home-btn:hover {
