@@ -350,6 +350,12 @@ header {
                     color: var(--white-for-text);
                     text-transform: uppercase;
                 }
+
+                & .portfolio-text {
+                    padding: 1rem;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
             }
 
             & .button-wrapper {
