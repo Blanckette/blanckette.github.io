@@ -26,7 +26,7 @@ body {
     color: var(--main-black-color);
 }
 
-@media (width >= 768px) {
+@media (width >= 1024px) {
     .main-body-wrapper {
         padding-left: 5rem;
         padding-right: 5rem;
@@ -37,8 +37,12 @@ body {
     .main-body-wrapper {
         padding-left: 10rem;
         padding-right: 10rem;
+        width: 80rem; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-}
+}    
 
 /* regrouper tous les elemets repete comme liens paragraph etc */
 @media (width >= 768px) {
