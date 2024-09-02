@@ -113,6 +113,10 @@ body {
         background-color: transparent;
         font-weight: lighter;
         color: #000;
+
+        & .black-text {
+            color: black;
+        }
     }
 
     & .home-btn:hover {
