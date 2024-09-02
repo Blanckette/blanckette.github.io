@@ -164,13 +164,13 @@ header {
     justify-content: space-between;
     padding: 1.5rem;
 
-    & #menu {
+    /* & #menu {
         display: grid;
         grid-template-rows: repeat(3, 7rem);
         grid-auto-flow: row;
         gap: 0.5rem;
         /* padding: 1rem 2rem; */
-        color: var(--main-black-color);
+        /* color: var(--main-black-color);
         font-family: Lora;
         font-size: 5rem;
         font-style: normal;
@@ -184,11 +184,11 @@ header {
             color: black;
             font-style: normal;
             /* padding: 2rem; */
-            transition: transform 0.5s ease;
-            position: inherit;
-        }
+            /* transition: transform 0.5s ease;
+            position: inherit; */
+        /* } */
 
-        & .menu-item:hover {
+        /* & .menu-item:hover {
             transform: scale(1.05) skewX(-5deg);
         }
 
@@ -198,8 +198,8 @@ header {
                 margin-bottom: 2rem;
                 font-size: 4rem;
             }
-        }
-    }
+        } */ 
+    /* } */
 
     .porfolio-presentation {
         background-color: var(--section-bg-color);
