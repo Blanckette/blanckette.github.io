@@ -26,6 +26,13 @@ body {
     color: var(--main-black-color);
 }
 
+@media (width >= 768px) {
+    .main-body-wrapper {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
 @media (width >= 1200px) {
     .main-body-wrapper {
         padding-left: 10rem;
@@ -1328,6 +1335,11 @@ footer {
             display: flex;
             flex-direction: row;
             gap: 2rem;
+        }
+
+        .footer-content {
+            padding-left: 5rem;
+            padding-right: 5rem; 
         }
     }
 
