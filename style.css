@@ -482,16 +482,24 @@ header {
         border-radius: 25px;
 
         & .IdPhoto {
+            display: flex;
+            justify-content: center;
+            width: 100%;
 
             & .idphoto-img {
                 width: 14rem;
             }
         }
 
+        & .presentation {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
         & .name {
             color: var(--white-for-text);
             text-transform: uppercase;
-            text-align: center;
         }
 
         & .about-me {
@@ -511,14 +519,10 @@ header {
         }
     }
 
-    @media (width >= 640px) and (width <= 1024px) {
+    @media (width >= 640px) and (width < 1024px) {
         .hero-wrapper {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            align-self: flex-start;
-            justify-self: flex-start;
         }
     }
 
@@ -528,7 +532,6 @@ header {
         justify-content: flex-end;
         align-items: center;
         align-self: flex-end;
-        flex-shrink: 0;
         /* padding-bottom: 2rem; */
 
         & .separation-line {
@@ -602,10 +605,10 @@ header {
         justify-content: flex-start;
         gap: 1.5rem;
         background-color: var(--section-bg-color);
-        padding: 0 1rem 1rem 1rem;
+        padding: 0.5rem;
         border-radius: 25px;
         width: 100%;
-        height: 55rem;
+        height: 45rem;
         flex: 0 0 auto;
         position: relative;
 
@@ -620,6 +623,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     & .project-link {
@@ -1178,6 +1182,20 @@ h2 {
             gap: 1rem;
         }
     }
+
+    @media (width >= 1024px) {
+        & .skills-img {
+            width: 10rem;
+        }
+
+        & .subtitle {
+            
+            & p > button {
+                text-transform: uppercase;
+                font-size: medium;
+            }
+        }
+  }
 }
 
 #educationSpecialisation {
@@ -1238,6 +1256,20 @@ h2 {
             }
         }
     }
+
+    @media (width >= 1024px) {
+        & .education-img {
+            width: 12rem;
+        }
+
+        & .subtitle {
+            
+            & p > button {
+                text-transform: uppercase;
+                font-size: medium;
+            }
+        }
+  }
 }
 
 #workBackground {
@@ -1309,6 +1341,20 @@ h2 {
             }
         }
     }
+
+    @media (width >= 1024px) {
+        & .work-img {
+            width: 12rem;
+        }
+
+        & .subtitle {
+            
+            & p > button {
+                text-transform: uppercase;
+                font-size: medium;
+            }
+        }
+  }
 }
 
 #languages {
@@ -1358,6 +1404,20 @@ h2 {
             }
         }
     }
+
+    @media (width >= 1024px) {
+        & .languages-img {
+            width: 12rem;
+        }
+
+        & .subtitle {
+            
+            & p > button {
+                text-transform: uppercase;
+                font-size: medium;
+            }
+        }
+  }
 }
 
 #interests {
@@ -1411,6 +1471,20 @@ h2 {
             }
         }
     }
+
+    @media (width >= 1024px) {
+        & .hobby-img {
+            width: 9rem;
+        }
+
+        & .subtitle {
+            
+            & p > button {
+                text-transform: uppercase;
+                font-size: medium;
+            }
+        }
+  }
 }
 
 .subtitles {
