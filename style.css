@@ -504,7 +504,7 @@ header {
         .hero-wrapper {
             display: flex;
             flex-direction: column;
-            justify-content: start;
+            justify-content: center;
             align-items: center;
             gap: 2rem;
             margin-bottom: 2.5rem;
@@ -516,7 +516,7 @@ header {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            align-items: flex-start;
+            align-items: center;
             align-self: flex-start;
             justify-self: flex-start;
         }
@@ -567,6 +567,161 @@ header {
     padding-left: 2.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+.carousel-wrapper {
+    height: 60rem;
+}
+
+@media (width >= 768px) {
+    .carousel-wrapper {
+        height: 45rem;
+    }
+}
+
+@media (width < 768px) {
+    .carousel-wrapper {
+        height: 53rem;
+    }
+}
+
+@media (width <= 375px) {
+    .carousel-wrapper {
+        height: 50rem;
+    }
+}    
+
+.projects-carousel {
+    padding: 1.5rem;
+    height: 100%;
+
+    & .project-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        background-color: var(--section-bg-color);
+        padding: 0 1rem 1rem 1rem;
+        border-radius: 25px;
+        width: 100%;
+        height: 55rem;
+        flex: 0 0 auto;
+        position: relative;
+
+        & .project-pic {
+            width: 100%;
+            padding: 0.5rem;
+        }
+    }
+
+    & .project-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .project-link {
+        text-decoration: underline; 
+        display: inline-block;
+        position: relative;
+        background-color: var(--green-color);
+        width: 15rem;
+        padding: 1rem;
+        border-radius: 50px;
+        color: var(--white-for-text);
+        top: 1.8rem;
+        text-align: center;
+    }
+
+    & .project-link:hover {
+        background-color: var(--orange-color);
+        transform: scale(1.1);
+        transition: 0.8s ease;
+    }
+
+    & .project-text {
+        background-color: var(--white-bg-color);
+        padding: 1.5rem;
+        border-radius: 25px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        & .p-text {
+            padding-top: 1.5rem;
+        }
+
+        & .btn-project {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+    }
+
+    & .project-click {
+        background-color: var(--orange-color);
+        text-decoration: none;
+        color: var(--white-for-text);
+        padding: 0.8rem;
+        border-radius: 50px;
+        font-size: xx-small;
+        text-transform: uppercase;
+        box-shadow: 8px 8px 21px -15px rgba(66, 68, 90, 1);
+    }
+
+    & .project-click:hover {
+        background-color: var(--green-color);
+        color: var(--white-bg-color);
+        transform: scale(1.1);
+        transition: 0.8s ease;
+    }
+
+    @media (width >= 768px) {
+        & .project-item {
+            display: flex;
+            flex-direction: row;
+            padding: 1.5rem;
+            height: 38rem;
+        }
+
+        & .project-description {
+            height: 100%;
+        }
+
+        & .project-text {
+            height: auto;
+            padding: 2.5rem;
+        }
+
+        & .btn-project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        & .project-click {
+            font-size: small;
+            padding: 1rem;
+        }
+    }
+
+    @media (width < 768px) {
+        & .project-item {
+            height: 51rem;
+        }
+    }
+
+    @media (width <= 375px) {
+        & .project-item {
+            height: 48rem;
+        }
+    }        
 }
 
 .projects-bullets {
@@ -917,6 +1072,8 @@ h2 {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1.5rem;
+        justify-items: center;
+        justify-content: center;
 
         & .logo {
             width: 4rem;
@@ -1443,6 +1600,12 @@ footer {
     gap: 1.5rem;
     padding: 1.5rem;
     text-align: center;
+
+    & .persona-tech-section {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
 
 .persona-illustration {
@@ -1459,6 +1622,14 @@ footer {
         padding: 2rem;
         justify-items: center;
         justify-content: center;
+        width: 100%;
+
+        & .project-presentation {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+        }
 
         & .small-text {
             line-height: 140%;
@@ -1493,6 +1664,17 @@ footer {
             transition: 0.8s ease;
         }
 
+        & .project-img {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            width: 100%;
+
+            & .project-pic {
+                width: 100%;
+            }
+        }
+
         & .tech-icons {
             display: flex;
             gap: 2rem;
@@ -1504,4 +1686,42 @@ footer {
         & .icon {
             width: 3rem;
         }
+}
+
+@media (width >= 768px) {
+    .objectives {
+        flex-direction: row;
+
+        & .project-presentation {
+            width: 100%;
+            padding: 1.5rem;
+        }
+    }
+
+    .project-details-text {
+        
+        & .persona-tech-section {
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+        }
+    }
+
+    .inspiration {
+        flex-direction: row-reverse;
+
+        & .project-presentation {
+            width: 100%;
+            padding: 1.5rem;
+        }
+    }
+
+    .project-links {
+        flex-direction: row;
+        gap: 3rem;
+
+        & .green-button {
+            width: 100%;
+        }
+    }
 }
