@@ -579,57 +579,38 @@ header {
     padding-left: 2.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-}
-
-.carousel-wrapper {
-    height: 60rem;
-}
-
-@media (width >= 768px) {
-    .carousel-wrapper {
-        height: 45rem;
-    }
-}
-
-@media (width < 768px) {
-    .carousel-wrapper {
-        height: 53rem;
-    }
-}
-
-@media (width <= 375px) {
-    .carousel-wrapper {
-        height: 50rem;
-    }
 }  
-
-@media (width >= 1125px) {
-    .carousel-wrapper {
-        height: 48rem;
-    }
-}
 
 .projects-carousel {
     padding: 1.5rem;
     height: 100%;
 
     & .project-item {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: flex-start; */
         gap: 1.5rem;
         background-color: var(--section-bg-color);
         padding: 0.5rem;
         border-radius: 25px;
         width: 100%;
-        height: 45rem;
-        flex: 0 0 auto;
+        height: 100%;
         position: relative;
 
         & .project-pic {
             width: 100%;
+            height: 100%;
             padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+
+            & .project-img {
+                object-fit: cover;
+            }
         }
     }
 
@@ -701,10 +682,15 @@ header {
 
     @media (width >= 768px) {
         & .project-item {
-            display: flex;
+            /* display: flex;
             flex-direction: row;
             padding: 1.5rem;
-            height: 38rem;
+            height: 38rem; */
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 1rem;
         }
 
         & .project-description {
@@ -730,7 +716,7 @@ header {
         }
     }
 
-    @media (width < 768px) {
+    /* @media (width < 768px) {
         & .project-item {
             height: 51rem;
         }
@@ -740,14 +726,32 @@ header {
         & .project-item {
             height: 48rem;
         }
-    } 
-    
-    @media (width >= 1125px) {
-        & .project-item {
-            height: 45rem;
-        }
+    }         */
+}
+
+/* @media (width >= 768px) {
+    .projects-carousel {
+        height: 38rem;
     }
 }
+
+@media (width < 768px) {
+    .projects-carousel {
+        height: 78rem;
+    }
+}
+
+@media (width < 576px) {
+    .projects-carousel {
+        height: 65rem;
+    }
+}
+
+@media (width <= 425px) {
+    .projects-carousel {
+        height: 55rem;
+    }
+}   */
 
 .projects-bullets {
     display: flex;
@@ -1525,8 +1529,6 @@ footer {
     background-color: var(--dark-green);
     width: 100%;
     color: white;
-    padding: 0;
-    margin: 0;
 
     & .footer-content {
         padding: 0 2.5rem 2.5rem;
@@ -1769,6 +1771,10 @@ footer {
 
             & .project-pic {
                 width: 100%;
+
+                & .project-img {
+                    object-fit: contain;
+                }
             }
         }
 
@@ -1822,3 +1828,4 @@ footer {
         }
     }
 }
+ß
