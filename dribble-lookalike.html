@@ -6,20 +6,23 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400.700;1,400.700&display=swap');
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Cooking-app project</title>
 </head>
 <body>
-    <header>
+    <header class="sticky-header">
         <div class="navbar">
             <div class="home-btn-container">
-                <a href="index.html">
-                    <button class="home-btn" type="button"><span class="black-text">home</span></button>
+                <a class="home-btn" href="index.html">
+                    home
                 </a>
             </div>
             <div class="menu-container">
-                <nav id="menu-visible" class="social-links navbar">
-                    <a class="social" href="about.html" target="_blank">my cv</a>
+                <nav id="menu-visible" class="social-links">
+                    <a class="social" href="about.html" target="_blank">my CV</a>
                     <a class="social menu-item nav-link" href="#item-3">contact</a>
                     <a class="social" href="https://github.com/Blanckette" target="_blank">Github</a>
                     <a class="social" href="https://www.linkedin.com/in/blanka-adamus-200276b8/?locale=en_US" target="_blank">LinkedIn</a>
@@ -36,11 +39,19 @@
                     <h3 class="medium center">objective</h3>
                     <div class="separation-line"></div>
                     <p class="small-text">
-                        I employed a <span class="text-underline">widely recognized portfolio website</span> as a platform to advance my expertise in web development. Drawing on my proficiency in <strong>HTML</strong> and <strong>CSS</strong>, I set out to emulate the visual appeal of <strong>Dribbble</strong>, a renowned design and creative hub. This undertaking was intended to elevate my proficiency in front-end development and immerse me in practical web development experience.
+                        <p>
+                            I employed a <span class="text-underline">widely recognized portfolio website</span> as a platform to advance my expertise in web development.
+                        </p>
+                        <p>
+                            Drawing on my proficiency in <strong>HTML</strong> and <strong>CSS</strong>, I set out to emulate the visual appeal of <strong>Dribbble</strong>, a renowned design and creative hub.
+                        </p>
+                        <p>
+                            This undertaking was intended to elevate my proficiency in front-end development and immerse me in practical web development experience.
+                        </p>
                     </p>
                 </div>
                 <div class="project-img">
-                    <img class="project-pic" src="ressources/Dribble-projectPic.png" alt="">
+                    <img class="project-pic" src="ressources/dribble-img-main.png" alt="">
                 </div>
             </div>
             <div class="persona-tech-section">
@@ -52,11 +63,13 @@
                         <img class="icon" src="ressources/html.png" alt="">
                     </div>
                 </div>
-                <ul class="project-section">
+                <div class="project-section">
                     <img class="persona-illustration" src="ressources/Hello.png" alt="">
-                    <li class="for-who small-text"><strong>for who</strong> : o showcase a designer's portfolio.</li>
-                    <li class="for-who small-text"><strong>purpose</strong> : To mimic an existing website as an exercise.</li>
-                </ul>
+                    <div class="list-items">
+                        <div class="for-who small-text"><strong>For who</strong> : to showcase a designer's portfolio.</div>
+                        <div class="for-who small-text"><strong>Purpose</strong> : To mimic an existing website as an exercise.</div>
+                    </div>
+                </div>
             </div>
             <div class="project-section inspiration">
                 <div class="project-presentation">
@@ -68,7 +81,7 @@
                     </p>
                 </div>
                 <div class="project-img">
-                    <img class="project-pic" src="ressources/dribble-img-2.png" alt="">
+                    <img class="project-pic" src="ressources/dribble-img-second.png" alt="">
                 </div>
             </div>
             <div class="project-section project-links">

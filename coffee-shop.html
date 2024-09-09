@@ -6,20 +6,23 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400.700;1,400.700&display=swap');
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Cooking-app project</title>
 </head>
 <body>
-    <header>
+    <header class="sticky-header">
         <div class="navbar">
             <div class="home-btn-container">
-                <a href="index.html">
-                    <button class="home-btn" type="button">home</button>
+                <a class="home-btn" href="index.html">
+                    home
                 </a>
             </div>
             <div class="menu-container">
-                <nav id="menu-visible" class="social-links navbar">
-                    <a class="social" href="about.html" target="_blank">my cv</a>
+                <nav id="menu-visible" class="social-links">
+                    <a class="social" href="about.html" target="_blank">my CV</a>
                     <a class="social menu-item nav-link" href="#item-3">contact</a>
                     <a class="social" href="https://github.com/Blanckette" target="_blank">Github</a>
                     <a class="social" href="https://www.linkedin.com/in/blanka-adamus-200276b8/?locale=en_US" target="_blank">LinkedIn</a>
@@ -38,11 +41,19 @@
                     <h3 class="medium center">objective</h3>
                     <div class="separation-line"></div>
                     <p class="small-text">
-                        I created this <strong>single-page website</strong> that mimics the layout and design of a cosy and inviting coffee shop, <span class="text-underline">based on a mockup</span>. My main goal was to enhance my understanding of web development by using only <strong>HTML</strong> and <strong>CSS</strong> to create a visually appealing website. This hands-on exercise allowed me to apply my knowledge in a practical setting and further my skills in front-end web development.
+                        <p>
+                            I created this <strong>single-page website</strong> that mimics the layout and design of a cosy and inviting coffee shop, <span class="text-underline">based on a mockup</span>.
+                        </p>
+                        <p>
+                            My main goal was to enhance my understanding of web development by using only <strong>HTML</strong> and <strong>CSS</strong> to create a visually appealing website.
+                        </p>
+                        <p>
+                            This hands-on exercise allowed me to apply my knowledge in a practical setting and further my skills in front-end web development.
+                        </p>
                     </p>
                 </div>
                 <div class="project-img">
-                    <img class="project-pic" src="ressources/Coffee-projectPic.png" alt="">
+                    <img class="project-pic" src="ressources/coffee-main.png" alt="">
                 </div>
             </div>
             <div class="persona-tech-section">
@@ -56,11 +67,13 @@
                         <img class="icon" src="ressources/logos_figma.png" alt="">
                     </div>
                 </div>
-                <ul class="project-section">
+                <div class="project-section">
                     <img class="persona-illustration" src="ressources/Hello.png" alt="">
-                    <li class="for-who"><strong>for who</strong> : For a coffee shop.</li>
-                    <li class="for-who"><strong>purpose</strong> : to practice integrating a mockup design.</li>
-                </ul>
+                    <div class="list-items">
+                        <div class="for-who"><strong>For who</strong> : For a coffee shop.</div>
+                        <div class="for-who"><strong>Purpose</strong> : to practice integrating a mockup design.</div>
+                    </div>
+                </div>
             </div>
             <div class="project-section inspiration">
                 <div class="project-presentation">
@@ -72,11 +85,11 @@
                     </p>
                 </div>
                 <div class="project-img">
-                    <img class="project-pic" src="ressources/coffee-img-2.png" alt="">
+                    <img class="project-pic" src="ressources/coffee-second.png" alt="">
                 </div>
             </div>
             <div class="project-section project-links">
-                <a class="green-button" href="https://blanckette.github.io/Coffee/" target="_blank"><p class="white-text">See preview</p></a> 
+                <a class="green-button" href="https://blanckette.github.io/Coffee/" target="_blank"><p class="white-text">See preview</p></a>
                 <a class="green-button" href="https://github.com/Blanckette/Coffee" target="_blank"><p class="white-text">Github repository</p></a>
             </div>
         </div>

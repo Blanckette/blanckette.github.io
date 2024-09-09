@@ -6,20 +6,23 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400.700;1,400.700&display=swap');
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Cooking-app project</title>
 </head>
 <body>
-    <header>
+    <header class="sticky-header">
         <div class="navbar">
             <div class="home-btn-container">
-                <a href="index.html">
-                    <button class="home-btn" type="button">home</button>
+                <a class="home-btn" href="index.html">
+                    home
                 </a>
             </div>
             <div class="menu-container">
-                <nav id="menu-visible" class="social-links navbar">
-                    <a class="social" href="about.html" target="_blank">my cv</a>
+                <nav id="menu-visible" class="social-links">
+                    <a class="social" href="about.html" target="_blank">my CV</a>
                     <a class="social menu-item nav-link" href="#item-3">contact</a>
                     <a class="social" href="https://github.com/Blanckette" target="_blank">Github</a>
                     <a class="social" href="https://www.linkedin.com/in/blanka-adamus-200276b8/?locale=en_US" target="_blank">LinkedIn</a>
@@ -36,11 +39,19 @@
                     <h3 class="medium center">objective</h3>
                     <div class="separation-line"></div>
                     <p class="small-text">
-                        As I was trying to learn some new web development skills, I specifically turned to the <span class="text-underline">SupportNinja website</span> as a valuable resource for experimenting with the creation of interactive elements using only CSS. Through this hands-on approach, I was able to delve deeply into the intricacies of <strong>responsive design</strong>, working with more advanced elements to gain a comprehensive understanding. This immersive experience significantly expanded my knowledge and expertise in this particular aspect of web development.
+                        <p>
+                            As I was trying to learn some new web development skills, I specifically turned to the <span class="text-underline">SupportNinja website</span> as a valuable resource for experimenting with the creation of interactive elements <span class="text-underline">using only CSS</span>.
+                        </p>
+                        <p>
+                            Through this hands-on approach, I was able to delve deeply into the intricacies of <strong>responsive design</strong>, working with more advanced elements to gain a comprehensive understanding.
+                        </p>
+                        <p>
+                            This immersive experience significantly expanded my knowledge and expertise in this particular aspect of web development.
+                        </p>
                     </p>
                 </div>
                 <div class="project-img">
-                    <img class="project-pic" src="ressources/supportninja-projectPic.png" alt="">
+                    <img class="project-pic" src="ressources/freelance-main.png" alt="">
                 </div>
             </div>
             <div class="persona-tech-section">
@@ -53,11 +64,13 @@
                         <img class="icon" src="ressources/logos_figma.png" alt="">
                     </div>
                 </div>
-                <ul class="project-section for-who">
+                <div class="project-section for-who">
                     <img class="persona-illustration" src="ressources/Hello.png" alt="">
-                    <li class="small-text for-who"><strong>for who</strong> : Freelancers' website.</li>
-                    <li class="small-text for-who"><strong>purpose</strong> : to acquire the knowledge and skills necessary for creating interactive elements.</li>
-                </ul>
+                    <div class="list-items">
+                        <div class="small-text for-who"><strong>For who</strong> : Freelancers' website.</div>
+                        <div class="small-text for-who"><strong>Purpose</strong> : to acquire the knowledge and skills necessary for creating interactive elements.</div>
+                    </div>
+                </div>
             </div>
             <div class="project-section inspiration">
                 <div class="project-presentation">
@@ -69,7 +82,7 @@
                     </p>
                 </div>
                 <div class="project-img">
-                    <img class="project-pic" src="ressources/freelance-img-2.png" alt="">
+                    <img class="project-pic" src="ressources/freelance-second.png" alt="">
                 </div>
             </div>
             <div class="project-section project-links">
