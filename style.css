@@ -566,8 +566,9 @@ body {
 
     & .navbar {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
+        gap: 0.3rem;
         align-items: flex-end;
         padding: 1.5rem;
         font-size: large;
@@ -590,6 +591,7 @@ body {
 
     & .social-links {
         display: flex;
+        align-items: center;
         justify-content: flex-end;
         gap: 0.5rem;
         background-color: transparent;
@@ -597,6 +599,11 @@ body {
         border-radius: 5px;
         flex-wrap: inherit;
         width: auto;
+
+        & .small {
+            width: 2.5rem;
+            height: auto;
+        }
 
         & .social {
             text-decoration: none;
@@ -623,7 +630,20 @@ body {
         & .social:hover::after {
             transform: scaleX(1);
             transform-origin: bottom left;
-        }   
+        }
+
+        & .large {
+            display: none;
+        }
+        
+        @media (width > 425px) {
+            & .large {
+                display: flex;
+            }
+            & .small {
+                display: none;
+            }
+        }
     }
 
     & .hero-wrapper {
