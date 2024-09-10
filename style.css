@@ -294,7 +294,7 @@ body {
     & .social-links {
         display: flex;
         justify-content: flex-end;
-        gap: 2rem;
+        gap: 3rem;
 
         & .social {
             text-decoration: none;
@@ -593,15 +593,14 @@ body {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 0.5rem;
+        gap: 1rem;
         background-color: transparent;
-        padding: 0.5rem;
         border-radius: 5px;
         flex-wrap: inherit;
         width: auto;
 
         & .small {
-            width: 2.5rem;
+            width: 2rem;
             height: auto;
         }
 
