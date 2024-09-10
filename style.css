@@ -1109,13 +1109,21 @@ body {
     & .hero-wrapper {
         background-color: var(--green-color);
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media (width > 768px) {
+            flex-direction: row-reverse;
+            gap: 2rem;
+            align-items: center;
+        }
 
         & .name {
             font-size: xx-large;
             font-weight: 400;
             padding: 1rem;
+            text-align: center;
         }
 
         & .about-me {
