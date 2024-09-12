@@ -2036,6 +2036,9 @@ footer {
         & .small-text {
             line-height: 160%;
             font-size: large;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
         }
 
         & .text-underline {
