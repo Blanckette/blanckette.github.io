@@ -2000,7 +2000,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding: 2rem;
+        padding: 1rem;
         justify-items: center;
         justify-content: center;
         width: 100%;
@@ -2091,9 +2091,10 @@ footer {
 
             & .project-pic {
                 width: 100%;
+                object-fit: cover;
 
                 & .project-img {
-                    object-fit: contain;
+                    object-fit: cover;
                     max-width: 100%;
                     height: auto;
                 }
@@ -2101,8 +2102,10 @@ footer {
         }
 
         & .tech-icons {
-            display: flex;
-            gap: 2rem;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
             justify-items: center;
             align-items: center;
             justify-content: center;
@@ -2110,6 +2113,20 @@ footer {
 
         & .icon {
             width: 3rem;
+        }
+
+        @media (width > 425px ) {
+            & .tech-icons {
+                display: flex;
+                gap: 2rem;
+                justify-items: center;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            & .icon {
+                width: 3rem;
+            }
         }
 }
 
