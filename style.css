@@ -2168,6 +2168,28 @@ footer {
     }
 }
 
+.project-next {
+    display: flex;
+    flex-direction: row;
+
+
+
+    & .text {
+        text-underline-offset: 0.3rem;
+        color: var(--darker-blue);
+    }
+
+    & .next:hover {
+        transform: translateX(0.3rem);
+        transition: transform 0.5s ease;
+    }
+
+    & .previous:hover {
+        transform: translateX(-0.3rem);
+        transition: transform 0.3s ease;
+    }
+}
+
 .cv-img-container {
     display: flex;
     justify-content: center;
